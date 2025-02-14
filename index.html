@@ -3,120 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eicar Com Car Rentals - Social Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Me - Parzival</title>
     <style>
-        /* Simple styles for the page */
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
             background-color: #0044cc;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
         }
 
         header h1 {
-            margin: 0;
             font-size: 2.5em;
         }
 
-        nav {
-            text-align: center;
-            background-color: #333;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+        header p {
             font-size: 1.2em;
         }
 
-        .content {
-            padding: 40px;
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px 0;
         }
 
-        .car-listing {
+        .profile {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
         }
 
-        .contact-btn {
-            background-color: #0044cc;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 30px;
         }
 
-        .contact-btn:hover {
-            background-color: #0033a0;
+        .profile h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
         }
 
-        footer {
+        .profile p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .skills, .games {
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #0044cc;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        .footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            margin-top: 40px;
         }
 
-        footer p {
-            margin: 0;
+        .footer p {
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Eicar Com Car Rentals - Social Platform</h1>
-    <p>Connect with car sellers and buyers in your area!</p>
+    <h1>Welcome to My Personal Page</h1>
+    <p>Learn more about who I am, my skills, and my passions.</p>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#buy">Buy a Car</a></li>
-        <li><a href="#sell">Sell a Car</a></li>
-        <li><a href="#profile">Your Profile</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<div class="container">
+    <!-- Profile Section -->
+    <section class="profile">
+        <img src="parzival.jpg" alt="Parzival's Picture">
+        <div>
+            <h2>Hi, I'm Parzival!</h2>
+            <p>I'm a passionate volunteer and avid gamer, committed to both my community and my hobbies. I believe in making a difference through small acts of kindness and enjoy relaxing through gaming in my spare time.</p>
+            <p>In addition to volunteering for religious purposes, I’m always learning new skills, meeting new people, and improving myself every day. I believe in the power of giving back and creating meaningful connections.</p>
+        </div>
+    </section>
 
-<div class="content">
-    <!-- Compact Cars Section -->
-    <section id="buy" class="car-listing">
-        <h2>Available Compact Cars for Rent</h2>
-        <p>If you'd like to view the complete price list for compact cars, click the link below to download the file:</p>
-        <a href="http://www.eicar.org/download/eicar.com.txt" download="eicar_compact_cars_pricelist.txt" class="contact-btn">
-            Download Compact Cars Price List
-        </a>
+    <!-- Skills Section -->
+    <section class="skills">
+        <h3>Skills & Expertise</h3>
+        <ul>
+            <li><strong>Volunteering & Religious Services:</strong> I actively volunteer my time to religious organizations, helping with community events and providing support to those in need.</li>
+            <li><strong>Game Development:</strong> I have a solid understanding of game mechanics and play several games where strategic thinking is key. I'm continuously learning new skills in game development and design.</li>
+            <li><strong>Problem Solving:</strong> I enjoy solving complex challenges, whether they’re related to gaming strategy or real-world issues.</li>
+            <li><strong>Leadership & Teamwork:</strong> I’ve held various leadership roles in volunteer projects and have a proven ability to lead and work within teams to achieve shared goals.</li>
+            <li><strong>Communication:</strong> Effective communication is a key strength of mine. Whether it’s explaining complex ideas or simply engaging in meaningful conversations, I thrive in all settings.</li>
+        </ul>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games">
+        <h3>Games I Play</h3>
+        <ul>
+            <li><strong>Chess:</strong> I enjoy strategic games like chess, which sharpen my critical thinking and planning abilities.</li>
+            <li><strong>Strategy Games (e.g., StarCraft, Civilization):</strong> I love games that challenge my tactical skills and decision-making under pressure.</li>
+            <li><strong>RPGs (e.g., The Witcher, Skyrim):</strong> As an RPG enthusiast, I enjoy getting lost in immersive worlds, developing characters, and exploring vast narratives.</li>
+            <li><strong>Online Multiplayer (e.g., League of Legends, Fortnite):</strong> These games help me stay sharp and provide opportunities to collaborate with friends and strangers alike in competitive settings.</li>
+            <li><strong>Simulation Games (e.g., SimCity, The Sims):</strong> These games fuel my creativity and love for planning and building virtual environments.</li>
+        </ul>
     </section>
 </div>
 
-<footer>
-    <p>&copy; 2025 Eicar Com Car Rentals | All Rights Reserved</p>
+<footer class="footer">
+    <p>&copy; 2025 Parzival | All Rights Reserved</p>
 </footer>
 
 </body>
