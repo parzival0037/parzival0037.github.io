@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,49 +53,10 @@
             padding: 40px;
         }
 
-        .user-profile,
-        .car-listing,
-        .messages {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .user-profile h2,
-        .car-listing h3 {
-            margin: 0;
-            font-size: 1.8em;
-        }
-
         .car-listing {
             display: flex;
             justify-content: space-between;
             gap: 20px;
-        }
-
-        .car-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .car-card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .message-box {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
         }
 
         .contact-btn {
@@ -127,87 +87,37 @@
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Eicar Com Car Rentals - Social Platform</h1>
-        <p>Connect with car sellers and buyers in your area!</p>
-    </header>
+<header>
+    <h1>Eicar Com Car Rentals - Social Platform</h1>
+    <p>Connect with car sellers and buyers in your area!</p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#buy">Buy a Car</a></li>
-            <li><a href="#sell">Sell a Car</a></li>
-            <li><a href="#profile">Your Profile</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#buy">Buy a Car</a></li>
+        <li><a href="#sell">Sell a Car</a></li>
+        <li><a href="#profile">Your Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <div class="content">
-        <!-- User Profile Section -->
-        <section id="profile" class="user-profile">
-            <h2>Your Profile</h2>
-            <p>Username: <strong>JohnDoe</strong></p>
-            <p>Email: <strong>johndoe@example.com</strong></p>
-            <p>Location: <strong>New York, USA</strong></p>
-            <button class="contact-btn">Edit Profile</button>
-        </section>
+<div class="content">
+    <!-- Compact Cars Section -->
+    <section id="buy" class="car-listing">
+        <h2>Available Compact Cars for Rent</h2>
+        <p>If you'd like to view the complete price list for compact cars, click the link below to download the file:</p>
+        <a href="http://example.com" download="eicar_compact_cars_pricelist.txt" class="contact-btn">
+            Download Compact Cars Price List
+        </a>
+    </section>
+</div>
 
-        <!-- Buy Section -->
-        <section id="buy" class="car-listing">
-            <h2>Available Cars for Rent</h2>
-            <div class="car-card">
-                <img src="https://via.placeholder.com/300x200" alt="Compact Car">
-                <h3>Compact Car</h3>
-                <p>$40/day</p>
-                <button class="contact-btn">Contact Seller</button>
-            </div>
-            <div class="car-card">
-                <img src="https://via.placeholder.com/300x200" alt="SUV">
-                <h3>SUV</h3>
-                <p>$80/day</p>
-                <button class="contact-btn">Contact Seller</button>
-            </div>
-            <div class="car-card">
-                <img src="https://via.placeholder.com/300x200" alt="Luxury Car">
-                <h3>Luxury Car</h3>
-                <p>$150/day</p>
-                <button class="contact-btn">Contact Seller</button>
-            </div>
-        </section>
-
-        <!-- Seller Section -->
-        <section id="sell" class="user-profile">
-            <h2>Sell Your Car</h2>
-            <p>As a seller, you can list your car for rent. Please provide details about your car to start.</p>
-            <form action="submit_listing.php" method="POST">
-                <label for="car_name">Car Name:</label>
-                <input type="text" id="car_name" name="car_name" required><br>
-
-                <label for="car_price">Price per Day ($):</label>
-                <input type="number" id="car_price" name="car_price" required><br>
-
-                <label for="car_image">Car Image URL:</label>
-                <input type="url" id="car_image" name="car_image" required><br>
-
-                <button type="submit" class="contact-btn">List Your Car</button>
-            </form>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="messages">
-            <h2>Contact Us</h2>
-            <textarea class="message-box" placeholder="Write your message here..." rows="5"></textarea><br>
-            <button class="contact-btn">Send Message</button>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Eicar Com Car Rentals | All Rights Reserved</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Eicar Com Car Rentals | All Rights Reserved</p>
+</footer>
 
 </body>
-
 </html>
