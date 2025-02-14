@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eicar Com Car Rentals</title>
+    <title>Eicar Com Car Rentals - Social Platform</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Simple styles for the page */
@@ -54,10 +54,25 @@
             padding: 40px;
         }
 
-        .cars {
+        .user-profile,
+        .car-listing,
+        .messages {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-profile h2,
+        .car-listing h3 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .car-listing {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             gap: 20px;
         }
 
@@ -76,33 +91,15 @@
             border-radius: 8px;
         }
 
-        .car-card h3 {
-            margin: 10px 0;
-            font-size: 1.5em;
-        }
-
-        .car-card p {
-            color: #555;
-        }
-
-        .contact-form {
-            background-color: white;
-            padding: 30px;
-            margin-top: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form input,
-        .contact-form textarea {
+        .message-box {
             width: 100%;
             padding: 10px;
-            margin-bottom: 15px;
+            margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
 
-        .contact-form button {
+        .contact-btn {
             background-color: #0044cc;
             color: white;
             border: none;
@@ -111,7 +108,7 @@
             cursor: pointer;
         }
 
-        .contact-form button:hover {
+        .contact-btn:hover {
             background-color: #0033a0;
         }
 
@@ -134,59 +131,76 @@
 <body>
 
     <header>
-        <h1>Eicar Com Car Rentals</h1>
-        <p>Your trusted partner in car rentals for every occasion</p>
+        <h1>Eicar Com Car Rentals - Social Platform</h1>
+        <p>Connect with car sellers and buyers in your area!</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#cars">Our Cars</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#buy">Buy a Car</a></li>
+            <li><a href="#sell">Sell a Car</a></li>
+            <li><a href="#profile">Your Profile</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="content">
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>At Eicar Com, we offer a wide range of car rental options to meet your needs, from everyday commuting to luxury trips. Our vehicles are always well-maintained and ready for your next adventure!</p>
+        <!-- User Profile Section -->
+        <section id="profile" class="user-profile">
+            <h2>Your Profile</h2>
+            <p>Username: <strong>JohnDoe</strong></p>
+            <p>Email: <strong>johndoe@example.com</strong></p>
+            <p>Location: <strong>New York, USA</strong></p>
+            <button class="contact-btn">Edit Profile</button>
         </section>
 
-        <section id="cars">
-            <h2>Our Cars</h2>
-            <div class="cars">
-                <div class="car-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Compact Car">
-                    <h3>Compact Car</h3>
-                    <p>Perfect for city trips and fuel efficiency.</p>
-                </div>
-                <div class="car-card">
-                    <img src="https://via.placeholder.com/300x200" alt="SUV">
-                    <h3>SUV</h3>
-                    <p>Spacious and ideal for family trips.</p>
-                </div>
-                <div class="car-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Luxury Car">
-                    <h3>Luxury Car</h3>
-                    <p>For those who like to drive in style and comfort.</p>
-                </div>
+        <!-- Buy Section -->
+        <section id="buy" class="car-listing">
+            <h2>Available Cars for Rent</h2>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200" alt="Compact Car">
+                <h3>Compact Car</h3>
+                <p>$40/day</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200" alt="SUV">
+                <h3>SUV</h3>
+                <p>$80/day</p>
+                <button class="contact-btn">Contact Seller</button>
+            </div>
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200" alt="Luxury Car">
+                <h3>Luxury Car</h3>
+                <p>$150/day</p>
+                <button class="contact-btn">Contact Seller</button>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form class="contact-form" action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <!-- Seller Section -->
+        <section id="sell" class="user-profile">
+            <h2>Sell Your Car</h2>
+            <p>As a seller, you can list your car for rent. Please provide details about your car to start.</p>
+            <form action="submit_listing.php" method="POST">
+                <label for="car_name">Car Name:</label>
+                <input type="text" id="car_name" name="car_name" required><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="car_price">Price per Day ($):</label>
+                <input type="number" id="car_price" name="car_price" required><br>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="car_image">Car Image URL:</label>
+                <input type="url" id="car_image" name="car_image" required><br>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="contact-btn">List Your Car</button>
             </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="messages">
+            <h2>Contact Us</h2>
+            <textarea class="message-box" placeholder="Write your message here..." rows="5"></textarea><br>
+            <button class="contact-btn">Send Message</button>
         </section>
     </div>
 
