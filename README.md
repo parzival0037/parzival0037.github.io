@@ -1,8 +1,7 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/parzival0037/kenctl/blob/main/webui/profile-banner.svg" alt="parzival0037: Professor, CyberDefense Engineer, Poet, Ethical Hacker" width="100%">
+</div>
 
-<a href="https://github.com/parzival0037/kenctl">
-  <img src="https://raw.githubusercontent.com/parzival0037/kenctl/main/docs/kenctl-logo.svg" alt="KenCTL" width="520">
-</a>
 
 ### Between lines of code and lines of poetry, I exist.
 
