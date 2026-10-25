@@ -6,7 +6,7 @@
 
 ### Between lines of code and lines of poetry, I exist.
 
-**Professor · CyberDefense Engineer · Poet · Ethical Hacker****
+**Professor · CyberDefense Engineer · Poet · Ethical Hacker**
 
 *Cybersecurity & AI*
 
