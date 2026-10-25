@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/parzival0037/kenctl/blob/main/webui/profile-banner.svg" alt="parzival0037: Professor, CyberDefense Engineer, Poet, Ethical Hacker" width="100%">
+  <img src="https://raw.githubusercontent.com/parzival0037/kenctl/main/webui/profile-banner.png" alt="parzival0037: Professor, CyberDefense Engineer, Poet, Ethical Hacker" width="100%">
 </div>
-
 
 ### Between lines of code and lines of poetry, I exist.
 
